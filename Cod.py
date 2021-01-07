@@ -24,11 +24,11 @@ win.addch(food[0], food[1], '*')
 
 while key != 27:      
     win.border(0)
-    # Printing 'Score' and
+ 
     win.addstr(0, 2, 'Score : ' + str(score) + ' ')
-    # 'SNAKE' strings
+   
     win.addstr(0, 27, ' SNAKE ')
-    # Increases the speed of Snake as its length increases
+ 
     win.timeout(150 - (len(snake)/5 + len(snake)/10) % 120)
 
     prevKey = key
