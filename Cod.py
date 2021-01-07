@@ -44,7 +44,7 @@ while key != 27:
         key = prevKey
         continue
 
-    if key not in [KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN, 27]:     # If an invalid key is pressed
+    if key not in [KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN, 27]:     
         key = prevKey
 
    
@@ -66,7 +66,7 @@ while key != 27:
     if snake[0] in snake[1:]:
         break
 
-    if snake[0] == food:                                            # When snake eats the food
+    if snake[0] == food:                                          
         food = []
         score += 1
         while food == []:
